@@ -1,0 +1,53 @@
+body {
+    background-color: darkslategrey;
+}
+
+.content {
+    margin: 10px auto;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    color: whitesmoke;
+    background-color: #1b2929;
+    padding: 2em;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px 5px black ;
+}
+
+.heading {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    border-radius: 5px;
+    height: 3em;
+    min-width: 100px;
+    width: 40%;
+    align-self: center;
+    border: 1px solid #020f0f;
+}
+
+label {
+    margin: .5em;
+}
+
+textarea, fieldset {
+    margin: 1em 0;
+    border-color: #1b2929;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea, select, button {
+    background-color: darkslategray;
+    color: whitesmoke;
+    font-size: 1em;
+}

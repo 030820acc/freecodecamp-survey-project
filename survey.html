@@ -1,37 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teixcalaan Aptitude Testing Survey</title>
     <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-    <h1 id="title">Lsel Station Aptitude Testing Survey</h1>
-    <p id="description">This is a survey for recent Aptitude test participants.</p>
-    <form id="survey-form">
-        <label id="name-label" for="name">Enter your Name: 
-            <input id="name" type="text" placeholder="Enter your name" />
-        </label>
-        <label id="email-label" for="email">Enter your StationerID: 
-            <input id="email" type="email" placeholder="Enter your StationerID" />
-        </label>
-        <label id="number-label" for="number">Enter your number of course credits (minimum 4): 
-            <input id="number" type="number" min="4" max="10" placeholder="Number of credits" />
-        </label>
-        <label for="dropdown">Please enter your home system: 
-            <select id="dropdown">
-                <option value="0">Please select one</option>
-                <option value="lsel">Lsel Station</option>
-                <option value="teixcalaan">Empire of Teixcalaan</option>
-            </select>
-        </label>
-        <fieldset>
-            <legend>Please select your preferred branch for employment</legend>
-            <label for="miner"><input type="radio" name="branch" id="miner" /> Miners</label>
-            <label for="pilot"><input type="radio" name="branch" id="pilot" /> Pilots</label>
-            <label for="heritage"><input type="radio" name="branch" id="heritage" /> Heritage</label>
-        </fieldset>
-    </form>
+    <div class="content">
+        <div class="heading">
+            <h1 id="title">Lsel Station Aptitude Testing Survey</h1>
+            <p id="description">This is a survey for recent Aptitude test participants.</p>
+        </div>
+        <form id="survey-form">
+            <label id="name-label" for="name">Enter your Name:
+                <input id="name" type="text" placeholder="Enter your name" required />
+            </label>
+            <label id="email-label" for="email">Enter your StationerID:
+                <input id="email" type="email" placeholder="Enter your StationerID" required />
+            </label>
+            <label id="number-label" for="number">Enter your number of course credits (minimum 4):
+                <input id="number" type="number" min="4" max="10" placeholder="Number of credits" />
+            </label>
+            <label for="dropdown">Please enter your home system:
+                <select id="dropdown">
+                    <option value="0">Please select one</option>
+                    <option value="lsel">Lsel Station</option>
+                    <option value="teixcalaan">Empire of Teixcalaan</option>
+                </select>
+            </label>
+            <fieldset>
+                <legend>Please select your preferred branch for employment</legend>
+                <label for="miner"><input type="radio" name="branch" id="miner" value="miner" /> Miners</label>
+                <label for="pilot"><input type="radio" name="branch" id="pilot" value="pilot" /> Pilots</label>
+                <label for="heritage"><input type="radio" name="branch" id="heritage" value="heritage" />
+                    Heritage</label>
+            </fieldset>
+            <fieldset>
+                <legend>Please select your previous areas of study</legend>
+                <label for="hydroponics"><input type="checkbox" id="hydroponics" value="hydroponics" />
+                    hydroponics</label>
+                <label for="language"><input type="checkbox" id="language" value="language" /> foreign language and
+                    cultural studies</label>
+                <label for="flight"><input type="checkbox" id="flight" value="flight" /> flight lessons</label>
+                <label for="astrogeology"><input type="checkbox" id="astrogeology" value="astrogeology" />
+                    astrogeology</label>
+                <label for="chemistry"><input type="checkbox" id="chemistry" value="chemistry" /> chemistry</label>
+                <label for="physics"><input type="checkbox" id="physics" value="physics" /> physics</label>
+                <label for="engineering"><input type="checkbox" id="engineering" value="engineering" />
+                    engineering</label>
+                <label for="medicine"><input type="checkbox" id="medicine" value="medicine" /> medicine</label>
+                <label for="history"><input type="checkbox" id="history" value="history" /> history</label>
+            </fieldset>
+            <textarea placeholder="additional comments" rows="5"></textarea>
+            <button id="submit">Submit</button>
+        </form>
+    </div>
 </body>
 </html>
