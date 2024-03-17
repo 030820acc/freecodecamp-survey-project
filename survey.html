@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teixcalaan Aptitude Testing Survey</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <h1 id="title">Lsel Station Aptitude Testing Survey</h1>
+    <p id="description">This is a survey for recent Aptitude test participants.</p>
+    <form id="survey-form">
+        <label id="name-label" for="name">Enter your Name: 
+            <input id="name" type="text" placeholder="Enter your name" />
+        </label>
+        <label id="email-label" for="email">Enter your StationerID: 
+            <input id="email" type="email" placeholder="Enter your StationerID" />
+        </label>
+        <label id="number-label" for="number">Enter your number of course credits (minimum 4): 
+            <input id="number" type="number" min="4" max="10" placeholder="Number of credits" />
+        </label>
+        <label for="dropdown">Please enter your home system: 
+            <select id="dropdown">
+                <option value="0">Please select one</option>
+                <option value="lsel">Lsel Station</option>
+                <option value="teixcalaan">Empire of Teixcalaan</option>
+            </select>
+        </label>
+        <fieldset>
+            <legend>Please select your preferred branch for employment</legend>
+            <label for="miner"><input type="radio" name="branch" id="miner" /> Miners</label>
+            <label for="pilot"><input type="radio" name="branch" id="pilot" /> Pilots</label>
+            <label for="heritage"><input type="radio" name="branch" id="heritage" /> Heritage</label>
+        </fieldset>
+    </form>
+</body>
+</html>
